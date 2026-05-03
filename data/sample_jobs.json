@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Senior Python Backend Engineer",
+        "department": "Engineering",
+        "description": "We are looking for a Senior Python Engineer to build high-performance APIs and microservices. You will architect robust solutions, optimize database queries, and ensure low-latency performance for our core platform.",
+        "required_skills": ["Python", "FastAPI", "PostgreSQL", "Docker", "SQL"],
+        "preferred_skills": ["AWS", "Kubernetes", "Redis", "Microservices", "Celery"],
+        "min_experience": 5.0,
+        "min_education": "Bachelor's Degree"
+    },
+    {
+        "title": "Data Scientist - NLP",
+        "department": "AI / ML",
+        "description": "Seeking an experienced Data Scientist specializing in Natural Language Processing. You will develop skill extraction engines, match algorithms, and fine-tune large language models for HR tech applications.",
+        "required_skills": ["Python", "Machine Learning", "NLP", "PyTorch", "spaCy", "Scikit-Learn"],
+        "preferred_skills": ["Transformers", "HuggingFace", "LLM", "RAG", "SQL"],
+        "min_experience": 3.0,
+        "min_education": "Master's Degree"
+    },
+    {
+        "title": "Product Manager (B2B SaaS)",
+        "department": "Product",
+        "description": "Lead the product vision for our Enterprise HR platform. Work closely with engineering, design, and sales to deliver high-impact features. Must have excellent stakeholder management and Agile experience.",
+        "required_skills": ["Product Management", "Agile", "Jira", "Cross-Functional Collaboration", "Roadmapping"],
+        "preferred_skills": ["B2B SaaS", "User Research", "Data Analysis", "SQL"],
+        "min_experience": 4.0,
+        "min_education": "Bachelor's Degree"
+    }
+]
