@@ -7,9 +7,8 @@ import requests
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
-
-# ── API Config ────────────────────────────────────────────────────────
-API_URL = "http://127.0.0.1:8000/api"
+import os
+API_URL = os.getenv("API_URL", "https://your-backend-url.onrender.com/api")
 
 # ── Page Config & Custom CSS ──────────────────────────────────────────
 st.set_page_config(
