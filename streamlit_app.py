@@ -2,7 +2,6 @@
 Smart Resume Screening System - Streamlit Dashboard
 Professional, modern UI interacting with the FastAPI backend.
 """
-import os
 import streamlit as st
 import requests
 import pandas as pd
@@ -10,7 +9,7 @@ import plotly.express as px
 from datetime import datetime
 
 # ── API Config ────────────────────────────────────────────────────────
-API_URL = os.getenv("API_URL", "http://127.0.0.1:8000/api")
+API_URL = "http://127.0.0.1:8000/api"
 
 # ── Page Config & Custom CSS ──────────────────────────────────────────
 st.set_page_config(

@@ -35,7 +35,7 @@ def _sigmoid(x: float, midpoint: float = 0.0, steepness: float = 1.0) -> float:
 def compute_skill_score(
     candidate_skills: List[str],
     required_skills: List[str],
-    preferred_skills: List[str] | None = None,
+    preferred_skills: Optional[List[str]] = None,
 ) -> Tuple[float, List[str], List[str]]:
     """
     Compute skill match score (0–100).

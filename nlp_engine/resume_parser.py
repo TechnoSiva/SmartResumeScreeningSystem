@@ -4,6 +4,8 @@ Resume Parser — extracts raw text and contact info from PDF / DOCX files.
 import re
 from pathlib import Path
 
+from typing import Optional
+
 import pdfplumber
 from docx import Document
 import spacy
@@ -56,14 +58,14 @@ def extract_text(file_path: str) -> str:
         raise ValueError(f"Unsupported file format: {ext}")
 
 
-def extract_email(text: str) -> str | None:
+def extract_email(text: str) -> Optional[str]:
     """Extract email address from text."""
     pattern = r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
     match = re.search(pattern, text)
     return match.group(0) if match else None
 
 
-def extract_phone(text: str) -> str | None:
+def extract_phone(text: str) -> Optional[str]:
     """Extract phone number from text."""
     patterns = [
         r"(?:\+?\d{1,3}[\s\-]?)?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{4}",
@@ -77,7 +79,7 @@ def extract_phone(text: str) -> str | None:
     return None
 
 
-def extract_name_from_filename(file_path: str) -> str | None:
+def extract_name_from_filename(file_path: str) -> Optional[str]:
     """Extract candidate name from the file name if it follows standard conventions."""
     if not file_path:
         return None

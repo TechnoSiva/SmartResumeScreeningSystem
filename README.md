@@ -1,7 +1,5 @@
 # Smart Resume Screening System 🚀
 
-[Deployment Guide](./DEPLOYMENT.md) | [License](./LICENSE)
-
 An AI-driven recruitment tool designed to automate the initial screening process. This system parses resumes (PDF/DOCX), extracts key information using NLP, and ranks candidates against job requirements using a weighted scoring engine.
 
 ![Dashboard Preview](https://img.shields.io/badge/Tech-FastAPI%20%7C%20Streamlit%20%7C%20spaCy-blue)

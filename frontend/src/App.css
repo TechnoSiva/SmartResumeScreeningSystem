@@ -1,0 +1,18 @@
+.app-layout {
+  min-height: 100vh;
+}
+
+.main-content {
+  transition: margin-left var(--transition-slow);
+}
+
+.main-area {
+  margin-top: var(--topbar-height);
+  min-height: calc(100vh - var(--topbar-height));
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0 !important;
+  }
+}
